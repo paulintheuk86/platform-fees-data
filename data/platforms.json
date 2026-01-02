@@ -1,0 +1,86 @@
+{
+  "version": 2,
+  "lastUpdated": "2026-01-02T00:00:00.000Z",
+  "platforms": [
+    {
+      "id": "vanguard",
+      "name": "Vanguard Investor",
+      "websiteUrl": "https://www.vanguardinvestor.co.uk",
+      "accountTypesSupported": ["ISA", "SIPP", "GIA", "JISA"],
+      "fees": {
+        "platformFeePercent": 0.15,
+        "platformFeeLevel": "platform_level",
+        "fixedPlatformFee": 4,
+        "fixedPlatformFeeLevel": "account_level",
+        "feeCaps": {
+          "isa": 375,
+          "sipp": 375,
+          "gia": 375,
+          "jisa": 0,
+          "level": "account_level"
+        },
+        "dealingFees": {
+          "funds": 0,
+          "etfs": 0,
+          "shares": 0
+        },
+        "regularInvestmentFees": {
+          "funds": 0,
+          "etfs": 0,
+          "shares": 0
+        },
+        "sippFees": {
+          "drawdownAnnualFee": 0,
+          "crystallisationFee": 0,
+          "annualFee": 0
+        },
+        "exitFee": 0,
+        "transferFee": 0,
+        "specialRules": "Vanguard funds only. No ETFs or shares. Minimum £4/month platform fee per account (ISA, SIPP, GIA). Account fee capped at £375/year per account. JISA accounts have no fee cap."
+      },
+      "effectiveFrom": "2024-01-01",
+      "lastUpdated": "2026-01-02",
+      "version": 2
+    },
+    {
+      "id": "aj-bell",
+      "name": "AJ Bell Youinvest",
+      "websiteUrl": "https://www.ajbell.co.uk",
+      "accountTypesSupported": ["ISA", "SIPP", "GIA", "JISA"],
+      "fees": {
+        "platformFeePercent": 0.25,
+        "platformFeeLevel": "platform_level",
+        "fixedPlatformFee": 0,
+        "fixedPlatformFeeLevel": "platform_level",
+        "feeCaps": {
+          "isa": 0,
+          "sipp": 0,
+          "gia": 0,
+          "jisa": 0,
+          "level": "platform_level"
+        },
+        "dealingFees": {
+          "funds": 1.5,
+          "etfs": 9.95,
+          "shares": 9.95
+        },
+        "regularInvestmentFees": {
+          "funds": 1.5,
+          "etfs": 1.5,
+          "shares": 1.5
+        },
+        "sippFees": {
+          "drawdownAnnualFee": 0,
+          "crystallisationFee": 0,
+          "annualFee": 0
+        },
+        "exitFee": 0,
+        "transferFee": 0,
+        "specialRules": "No platform fee cap. Tiered dealing: Regular investments £1.50, one-off trades £9.95 (shares/ETFs)."
+      },
+      "effectiveFrom": "2024-01-01",
+      "lastUpdated": "2026-01-01",
+      "version": 1
+    }
+  ]
+}
