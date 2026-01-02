@@ -1,6 +1,6 @@
 {
-  "version": 2,
-  "lastUpdated": "2026-01-02T00:00:00.000Z",
+  "version": 3,
+  "lastUpdated": "2026-01-02T14:30:00.000Z",
   "platforms": [
     {
       "id": "vanguard",
@@ -10,14 +10,16 @@
       "fees": {
         "platformFeePercent": 0.15,
         "platformFeeLevel": "platform_level",
-        "fixedPlatformFee": 4,
-        "fixedPlatformFeeLevel": "account_level",
+        "fixedPlatformFee": 0,
+        "fixedPlatformFeeLevel": "platform_level",
+        "minimumPlatformFee": 4,
+        "minimumPlatformFeeLevel": "platform_level",
         "feeCaps": {
           "isa": 375,
           "sipp": 375,
           "gia": 375,
           "jisa": 0,
-          "level": "account_level"
+          "level": "platform_level"
         },
         "dealingFees": {
           "funds": 0,
@@ -36,11 +38,11 @@
         },
         "exitFee": 0,
         "transferFee": 0,
-        "specialRules": "Vanguard funds only. No ETFs or shares. Minimum £4/month platform fee per account (ISA, SIPP, GIA). Account fee capped at £375/year per account. JISA accounts have no fee cap."
+        "specialRules": "Vanguard funds only. No ETFs or shares. Minimum £4/month (£48/year) platform fee across all accounts. Maximum platform fee £375/year across all non-JISA accounts. JISA accounts excluded from fee cap."
       },
       "effectiveFrom": "2024-01-01",
       "lastUpdated": "2026-01-02",
-      "version": 2
+      "version": 3
     },
     {
       "id": "aj-bell",
@@ -77,6 +79,165 @@
         "exitFee": 0,
         "transferFee": 0,
         "specialRules": "No platform fee cap. Tiered dealing: Regular investments £1.50, one-off trades £9.95 (shares/ETFs)."
+      },
+      "effectiveFrom": "2024-01-01",
+      "lastUpdated": "2026-01-01",
+      "version": 1
+    },
+    {
+      "id": "hargreaves-lansdown",
+      "name": "Hargreaves Lansdown",
+      "websiteUrl": "https://www.hl.co.uk",
+      "accountTypesSupported": ["ISA", "SIPP", "GIA", "JISA"],
+      "fees": {
+        "platformFeePercent": 0.45,
+        "platformFeeLevel": "account_level",
+        "fixedPlatformFee": 0,
+        "fixedPlatformFeeLevel": "platform_level",
+        "feeCaps": {
+          "isa": 200,
+          "sipp": 200,
+          "gia": 200,
+          "jisa": 25,
+          "level": "account_level"
+        },
+        "dealingFees": {
+          "funds": 0,
+          "etfs": 11.95,
+          "shares": 11.95
+        },
+        "regularInvestmentFees": {
+          "funds": 0,
+          "etfs": 1.5,
+          "shares": 1.5
+        },
+        "sippFees": {
+          "drawdownAnnualFee": 0,
+          "crystallisationFee": 0,
+          "annualFee": 0
+        },
+        "exitFee": 0,
+        "transferFee": 0,
+        "specialRules": "Platform fee capped at £200/year (£45 min). Free fund dealing. £11.95 for shares/ETFs, £1.50 for regular share/ETF investments."
+      },
+      "effectiveFrom": "2024-01-01",
+      "lastUpdated": "2026-01-01",
+      "version": 1
+    },
+    {
+      "id": "interactive-investor",
+      "name": "Interactive Investor",
+      "websiteUrl": "https://www.ii.co.uk",
+      "accountTypesSupported": ["ISA", "SIPP", "GIA", "JISA"],
+      "fees": {
+        "platformFeePercent": 0,
+        "platformFeeLevel": "platform_level",
+        "fixedPlatformFee": 12.99,
+        "fixedPlatformFeeLevel": "platform_level",
+        "feeCaps": {
+          "isa": 0,
+          "sipp": 0,
+          "gia": 0,
+          "jisa": 0,
+          "level": "platform_level"
+        },
+        "dealingFees": {
+          "funds": 0,
+          "etfs": 0,
+          "shares": 0
+        },
+        "regularInvestmentFees": {
+          "funds": 0,
+          "etfs": 0,
+          "shares": 0
+        },
+        "sippFees": {
+          "drawdownAnnualFee": 120,
+          "crystallisationFee": 0,
+          "annualFee": 0
+        },
+        "exitFee": 0,
+        "transferFee": 0,
+        "specialRules": "£12.99/month flat fee (£155.88/year). Includes 1 free trade/month. Additional trades £3.99. SIPP drawdown £10/month extra (£120/year)."
+      },
+      "effectiveFrom": "2024-01-01",
+      "lastUpdated": "2026-01-01",
+      "version": 1
+    },
+    {
+      "id": "fidelity",
+      "name": "Fidelity Personal Investing",
+      "websiteUrl": "https://www.fidelity.co.uk",
+      "accountTypesSupported": ["ISA", "SIPP", "GIA", "JISA"],
+      "fees": {
+        "platformFeePercent": 0.35,
+        "platformFeeLevel": "platform_level",
+        "fixedPlatformFee": 0,
+        "fixedPlatformFeeLevel": "platform_level",
+        "feeCaps": {
+          "isa": 0,
+          "sipp": 0,
+          "gia": 0,
+          "jisa": 0,
+          "level": "platform_level"
+        },
+        "dealingFees": {
+          "funds": 0,
+          "etfs": 10,
+          "shares": 10
+        },
+        "regularInvestmentFees": {
+          "funds": 0,
+          "etfs": 1.5,
+          "shares": 1.5
+        },
+        "sippFees": {
+          "drawdownAnnualFee": 0,
+          "crystallisationFee": 0,
+          "annualFee": 0
+        },
+        "exitFee": 0,
+        "transferFee": 0,
+        "specialRules": "No platform fee cap. 0.35% ongoing charge. Free fund dealing, £10 for shares/ETFs (£1.50 for regular investments)."
+      },
+      "effectiveFrom": "2024-01-01",
+      "lastUpdated": "2026-01-01",
+      "version": 1
+    },
+    {
+      "id": "charles-stanley-direct",
+      "name": "Charles Stanley Direct",
+      "websiteUrl": "https://www.charles-stanley-direct.co.uk",
+      "accountTypesSupported": ["ISA", "SIPP", "GIA"],
+      "fees": {
+        "platformFeePercent": 0.35,
+        "platformFeeLevel": "platform_level",
+        "fixedPlatformFee": 0,
+        "fixedPlatformFeeLevel": "platform_level",
+        "feeCaps": {
+          "isa": 0,
+          "sipp": 0,
+          "gia": 0,
+          "level": "platform_level"
+        },
+        "dealingFees": {
+          "funds": 0,
+          "etfs": 11.5,
+          "shares": 11.5
+        },
+        "regularInvestmentFees": {
+          "funds": 0,
+          "etfs": 0,
+          "shares": 0
+        },
+        "sippFees": {
+          "drawdownAnnualFee": 100,
+          "crystallisationFee": 0,
+          "annualFee": 100
+        },
+        "exitFee": 0,
+        "transferFee": 25,
+        "specialRules": "0.35% platform fee (no cap). SIPP annual fee £100. Free fund dealing. £11.50 for shares/ETFs."
       },
       "effectiveFrom": "2024-01-01",
       "lastUpdated": "2026-01-01",
