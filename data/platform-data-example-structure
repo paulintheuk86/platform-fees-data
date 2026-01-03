@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "lastUpdated": "2026-01-03T12:00:00.000Z",
+  "platforms": [
+    {
+      "id": "example-platform",
+      "name": "Example Investment Platform",
+      "websiteUrl": "https://www.example.com",
+      "accountTypesSupported": ["ISA", "SIPP", "GIA", "JISA"],
+      "fees": {
+        "platformFeePercent": 0.25,
+        "platformFeeLevel": "platform_level",
+        "fixedPlatformFee": 10,
+        "fixedPlatformFeeLevel": "platform_level",
+        "minimumPlatformFee": 48,
+        "minimumPlatformFeeLevel": "platform_level",
+        "feeCaps": {
+          "isa": 200,
+          "sipp": 300,
+          "gia": 200,
+          "jisa": 50,
+          "level": "account_level"
+        },
+        "dealingFees": {
+          "funds": 0,
+          "etfs": 9.95,
+          "shares": 11.95
+        },
+        "regularInvestmentFees": {
+          "funds": 0,
+          "etfs": 1.5,
+          "shares": 1.5
+        },
+        "sippFees": {
+          "drawdownAnnualFee": 120,
+          "crystallisationFee": 50,
+          "annualFee": 100
+        },
+        "exitFee": 25,
+        "transferFee": 50,
+        "inactivityFee": 12,
+        "specialRules": "Example: Platform fee is 0.25% across all accounts with a minimum of £48/year and maximum of £200 per ISA/GIA or £300 for SIPP. SIPP drawdown costs £120/year. Free fund dealing. £9.95 for ETF trades, £11.95 for share trades. Regular investments charged at £1.50 per transaction."
+      },
+      "effectiveFrom": "2026-01-01",
+      "lastUpdated": "2026-01-03",
+      "version": 1
+    }
+  ]
+}
