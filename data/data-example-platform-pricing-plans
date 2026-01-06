@@ -1,0 +1,214 @@
+{
+  "version": 5,
+  "lastUpdated": "2026-01-04T12:00:00.000Z",
+  "platforms": [
+    {
+      "id": "interactive-investor",
+      "name": "Interactive Investor",
+      "websiteUrl": "https://www.ii.co.uk",
+      "accountTypesSupported": ["ISA", "SIPP", "GIA", "JISA"],
+      "pricingPlans": [
+        {
+          "id": "investor-essentials",
+          "name": "Investor Essentials",
+          "description": "£4.99/month. Stocks and shares ISA. Trading Account. Add-on SIPP £3.99/month.",
+          "accountTypesSupported": ["ISA", "GIA"],
+          "fees": {
+            "platformFeePercent": 0,
+            "platformFeeLevel": "platform_level",
+            "fixedPlatformFee": 4.99,
+            "fixedPlatformFeeLevel": "platform_level",
+            "feeCaps": {
+              "level": "platform_level"
+            },
+            "dealingFees": {
+              "funds": 0,
+              "etfs": 3.99,
+              "shares": 3.99
+            },
+            "regularInvestmentFees": {
+              "funds": 0,
+              "etfs": 0,
+              "shares": 0
+            },
+            "exitFee": 0,
+            "transferFee": 0,
+            "specialRules": "£4.99/month subscription. No free trades. SIPP add-on available for £3.99/month. Limited platform services."
+          }
+        },
+        {
+          "id": "investor",
+          "name": "Investor",
+          "description": "£11.99/month (most popular). ISA, Trading Account, Junior ISA. 3 free trades/month. Add Friends & Family £4/month. Free Regular Investing.",
+          "accountTypesSupported": ["ISA", "GIA", "JISA"],
+          "fees": {
+            "platformFeePercent": 0,
+            "platformFeeLevel": "platform_level",
+            "fixedPlatformFee": 11.99,
+            "fixedPlatformFeeLevel": "platform_level",
+            "feeCaps": {
+              "level": "platform_level"
+            },
+            "dealingFees": {
+              "funds": 4.99,
+              "etfs": 7.99,
+              "shares": 7.99
+            },
+            "regularInvestmentFees": {
+              "funds": 0,
+              "etfs": 0,
+              "shares": 0
+            },
+            "exitFee": 0,
+            "transferFee": 0,
+            "specialRules": "£11.99/month subscription (£143.88/year). Includes 3 free trades/month. Additional trades: £7.99 shares/ETFs, £4.99 funds. Free regular investing. Friends & Family add-on: £4/month."
+          }
+        },
+        {
+          "id": "pension-essentials",
+          "name": "Pension Essentials",
+          "description": "£5.99/month. Add to ISA for £4/month.",
+          "accountTypesSupported": ["SIPP"],
+          "fees": {
+            "platformFeePercent": 0,
+            "platformFeeLevel": "platform_level",
+            "fixedPlatformFee": 5.99,
+            "fixedPlatformFeeLevel": "platform_level",
+            "feeCaps": {
+              "level": "platform_level"
+            },
+            "dealingFees": {
+              "funds": 0,
+              "etfs": 3.99,
+              "shares": 3.99
+            },
+            "regularInvestmentFees": {
+              "funds": 0,
+              "etfs": 0,
+              "shares": 0
+            },
+            "sippFees": {
+              "drawdownAnnualFee": 0,
+              "crystallisationFee": 0,
+              "annualFee": 0
+            },
+            "exitFee": 0,
+            "transferFee": 0,
+            "specialRules": "£5.99/month SIPP subscription. No free trades. Add to ISA for £4/month. Limited platform services."
+          }
+        },
+        {
+          "id": "pension-builder",
+          "name": "Pension Builder",
+          "description": "£12.99/month. Add Friends & Family £4/month. 8 free members. Free Regular Investing.",
+          "accountTypesSupported": ["SIPP"],
+          "fees": {
+            "platformFeePercent": 0,
+            "platformFeeLevel": "platform_level",
+            "fixedPlatformFee": 12.99,
+            "fixedPlatformFeeLevel": "platform_level",
+            "feeCaps": {
+              "level": "platform_level"
+            },
+            "dealingFees": {
+              "funds": 4.99,
+              "etfs": 7.99,
+              "shares": 7.99
+            },
+            "regularInvestmentFees": {
+              "funds": 0,
+              "etfs": 0,
+              "shares": 0
+            },
+            "sippFees": {
+              "drawdownAnnualFee": 0,
+              "crystallisationFee": 0,
+              "annualFee": 0
+            },
+            "exitFee": 0,
+            "transferFee": 0,
+            "specialRules": "£12.99/month SIPP subscription (£155.88/year). Includes 3 free trades/month. 8 free Friends & Family members. Additional trades: £7.99 shares/ETFs, £4.99 funds. Free regular investing."
+          }
+        },
+        {
+          "id": "super-investor",
+          "name": "Super Investor",
+          "description": "£19.99/month. All account types. Add SIPP for £6/month. Free Regular Investing.",
+          "accountTypesSupported": ["ISA", "SIPP", "GIA", "JISA"],
+          "fees": {
+            "platformFeePercent": 0,
+            "platformFeeLevel": "platform_level",
+            "fixedPlatformFee": 19.99,
+            "fixedPlatformFeeLevel": "platform_level",
+            "feeCaps": {
+              "level": "platform_level"
+            },
+            "dealingFees": {
+              "funds": 4.99,
+              "etfs": 7.99,
+              "shares": 7.99
+            },
+            "regularInvestmentFees": {
+              "funds": 0,
+              "etfs": 0,
+              "shares": 0
+            },
+            "sippFees": {
+              "drawdownAnnualFee": 0,
+              "crystallisationFee": 0,
+              "annualFee": 0
+            },
+            "exitFee": 0,
+            "transferFee": 0,
+            "specialRules": "£19.99/month subscription (£239.88/year). Includes 3 free trades/month. SIPP add-on: £6/month. Additional trades: £7.99 shares/ETFs, £4.99 funds. Free regular investing. All platform services."
+          }
+        }
+      ],
+      "effectiveFrom": "2025-01-01",
+      "lastUpdated": "2026-01-04",
+      "version": 5
+    },
+    {
+      "id": "vanguard",
+      "name": "Vanguard Investor",
+      "websiteUrl": "https://www.vanguardinvestor.co.uk",
+      "accountTypesSupported": ["ISA", "SIPP", "GIA", "JISA"],
+      "fees": {
+        "platformFeePercent": 0.15,
+        "platformFeeLevel": "platform_level",
+        "fixedPlatformFee": 0,
+        "fixedPlatformFeeLevel": "platform_level",
+        "minimumPlatformFee": 4,
+        "minimumPlatformFeeLevel": "platform_level",
+        "feeCaps": {
+          "isa": 375,
+          "sipp": 375,
+          "gia": 375,
+          "jisa": 0,
+          "level": "platform_level"
+        },
+        "dealingFees": {
+          "funds": 0,
+          "etfs": 0,
+          "shares": 0
+        },
+        "regularInvestmentFees": {
+          "funds": 0,
+          "etfs": 0,
+          "shares": 0
+        },
+        "sippFees": {
+          "drawdownAnnualFee": 0,
+          "crystallisationFee": 0,
+          "annualFee": 0
+        },
+        "exitFee": 0,
+        "transferFee": 0,
+        "specialRules": "Single pricing plan. Vanguard funds only. No ETFs or shares. Minimum £4/month (£48/year) platform fee across all accounts. Maximum platform fee £375/year across all non-JISA accounts."
+      },
+      "effectiveFrom": "2024-01-01",
+      "lastUpdated": "2026-01-04",
+      "version": 5
+    }
+  ]
+}
