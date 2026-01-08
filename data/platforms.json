@@ -1,5 +1,5 @@
 {
-  "version": 5,
+  "version": 6,
   "lastUpdated": "2026-01-06T12:00:00.000Z",
   "platforms": [
     {
@@ -185,7 +185,7 @@
       "accountTypesSupported": ["ISA", "SIPP", "GIA", "JISA"],
       "fees": {
         "platformFeePercent": 0.15,
-        "platformFeeLevel": "platform_level",
+        "platformFeeLevel": "account_level",
         "fixedPlatformFee": 0,
         "fixedPlatformFeeLevel": "platform_level",
         "minimumPlatformFee": 4,
@@ -195,7 +195,7 @@
           "sipp": 375,
           "gia": 375,
           "jisa": 0,
-          "level": "platform_level"
+          "level": "account_level"
         },
         "dealingFees": {
           "funds": 0,
