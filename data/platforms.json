@@ -1,5 +1,5 @@
 {
-  "version": 7,
+  "version": 8,
   "lastUpdated": "2026-01-09T06:00:00.000Z",
   "platforms": [
     {
@@ -71,7 +71,7 @@
             },
             "exitFee": 0,
             "transferFee": 0,
-            "specialRules": "£11.99/month subscription (£143.88/year). Includes 3 free trades/month. Additional trades: £7.99 shares/ETFs, £4.99 funds. Free regular investing. SIPP add-on: £10/month (£120/year) on top of base plan."
+            "specialRules": "£11.99/month subscription (£143.88/year). Includes 3 free trades/month. Additional trades: £7.99 shares/ETFs, £4.99 funds. Free regular investing. SIPP add-on: £10/month (£120/year) on top of base plan. "
           }
         },
         {
@@ -214,11 +214,11 @@
         },
         "exitFee": 0,
         "transferFee": 0,
-        "specialRules": "Vanguard funds only. No ETFs or shares. Minimum £4/month (£48/year) platform fee across all accounts. Maximum platform fee £375/year across all non-JISA accounts. JISA accounts excluded from fee cap."
+        "specialRules": "0.15% platform fee applied to ISA, SIPP, GIA, JISA. Minimum fee £4/month (£48/year) applies ONLY to ISA, SIPP, GIA when combined balances on these accounts are <£32,000. JISA balances are excluded from the minimum fee rule. Fee capped at £375 per adult on ISA, SIPP, GIA."
       },
       "effectiveFrom": "2024-01-01",
       "lastUpdated": "2026-01-09",
-      "version": 7
+      "version": 8
     },
     {
       "id": "aj-bell",
@@ -380,43 +380,45 @@
       "version": 5
     },
     {
-      "id": "freetrade",
-      "name": "Freetrade",
-      "websiteUrl": "https://www.freetrade.io",
-      "accountTypesSupported": ["ISA", "GIA", "SIPP"],
-      "fees": {
-        "platformFeePercent": 0,
-        "platformFeeLevel": "platform_level",
-        "fixedPlatformFee": 0,
-        "fixedPlatformFeeLevel": "account_level",
-        "feeCaps": {
-          "isa": 0,
-          "sipp": 0,
-          "gia": 0,
-          "level": "platform_level"
-        },
-        "dealingFees": {
-          "funds": 0,
-          "etfs": 0,
-          "shares": 0
-        },
-        "regularInvestmentFees": {
-          "funds": 0,
-          "etfs": 0,
-          "shares": 0
-        },
-        "sippFees": {
-          "drawdownAnnualFee": 0,
-          "crystallisationFee": 0,
-          "annualFee": 0
-        },
-        "exitFee": 0,
-        "transferFee": 0,
-        "specialRules": "Free basic account. ISA requires £4.99/month subscription (£59.88/year). SIPP requires £9.99/month subscription (£119.88/year). Free commission trading on UK and US stocks and ETFs. Limited investment universe."
-      },
+  "id": "freetrade",
+  "name": "Freetrade",
+  "websiteUrl": "https://www.freetrade.io",
+  "accountTypesSupported": ["ISA", "GIA", "SIPP"],
+  "fees": {
+    "platformFeePercent": 0,
+    "platformFeeLevel": "account_level",
+    "fixedPlatformFee": 0,
+    "fixedPlatformFeeLevel": "account_level",
+    "feeCaps": {
+      "isa": 59.88,
+      "sipp": 119.88,
+      "gia": 0,
+      "level": "account_level"
+    },
+    "dealingFees": {
+      "funds": 0,
+      "etfs": 0,
+      "shares": 0
+    },
+    "regularInvestmentFees": {
+      "funds": 0,
+      "etfs": 0,
+      "shares": 0
+    },
+    "sippFees": {
+      "drawdownAnnualFee": 0,
+      "crystallisationFee": 0,
+      "annualFee": 0
+    },
+    "exitFee": 0,
+    "transferFee": 0,
+    "specialRules": "ISA £4.99/month (£59.88/year) per ISA. SIPP £9.99/month (£119.88/year) per SIPP. GIA free."
+  }
+}
+
       "effectiveFrom": "2024-01-01",
-      "lastUpdated": "2026-01-06",
-      "version": 5
+      "lastUpdated": "2026-01-09",
+      "version": 6
     },
     {
       "id": "trading-212",
