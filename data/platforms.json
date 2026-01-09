@@ -1,6 +1,6 @@
 {
-  "version": 6,
-  "lastUpdated": "2026-01-08T12:00:00.000Z",
+  "version": 7,
+  "lastUpdated": "2026-01-09T06:00:00.000Z",
   "platforms": [
     {
       "id": "interactive-investor",
@@ -189,7 +189,7 @@
         "fixedPlatformFee": 0,
         "fixedPlatformFeeLevel": "platform_level",
         "minimumPlatformFee": 4,
-        "minimumPlatformFeeLevel": "platform_level",
+        "minimumPlatformFeeLevel": "account_level",
         "feeCaps": {
           "isa": 375,
           "sipp": 375,
@@ -217,8 +217,8 @@
         "specialRules": "Vanguard funds only. No ETFs or shares. Minimum £4/month (£48/year) platform fee across all accounts. Maximum platform fee £375/year across all non-JISA accounts. JISA accounts excluded from fee cap."
       },
       "effectiveFrom": "2024-01-01",
-      "lastUpdated": "2026-01-06",
-      "version": 5
+      "lastUpdated": "2026-01-09",
+      "version": 7
     },
     {
       "id": "aj-bell",
@@ -492,7 +492,7 @@
       },
       "effectiveFrom": "2024-01-01",
       "lastUpdated": "2026-01-08",
-      "version": 6
+      "version": 5
     }
   ]
 }
