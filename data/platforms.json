@@ -413,9 +413,7 @@
     "exitFee": 0,
     "transferFee": 0,
     "specialRules": "ISA £4.99/month (£59.88/year) per ISA. SIPP £9.99/month (£119.88/year) per SIPP. GIA free."
-  }
-}
-
+  },
       "effectiveFrom": "2024-01-01",
       "lastUpdated": "2026-01-09",
       "version": 6
