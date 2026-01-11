@@ -1,6 +1,6 @@
 {
-  "version": 10,
-  "lastUpdated": "2026-01-09T06:00:00.000Z",
+  "version": 11,
+  "lastUpdated": "2026-01-11T12:00:00.000Z",
   "platforms": [
     {
       "id": "interactive-investor",
@@ -175,8 +175,8 @@
         }
       ],
       "effectiveFrom": "2025-01-01",
-      "lastUpdated": "2026-01-06",
-      "version": 5
+      "lastUpdated": "2026-01-11",
+      "version": 6
     },
     {
       "id": "vanguard",
@@ -191,6 +191,7 @@
         "fixedPlatformFeeLevel": "platform_level",
         "minimumPlatformFee": 4,
         "minimumPlatformFeeLevel": "account_level",
+        "minimumFeeExemptAccountTypes": ["JISA"],
         "feeCaps": {
           "isa": 375,
           "sipp": 375,
@@ -218,13 +219,14 @@
         "specialRules": "0.15% platform fee applied to ISA, SIPP, GIA, JISA. Minimum fee £4/month (£48/year) applies ONLY to ISA, SIPP, GIA when combined balances on these accounts are <£32,000. JISA balances are excluded from the minimum fee rule. Fee capped at £375 per adult on ISA, SIPP, GIA."
       },
       "effectiveFrom": "2024-01-01",
-      "lastUpdated": "2026-01-09",
-      "version": 8
+      "lastUpdated": "2026-01-11",
+      "version": 9
     },
     {
       "id": "aj-bell",
       "name": "AJ Bell Youinvest",
       "websiteUrl": "https://www.ajbell.co.uk",
+      "affiliateUrl": "https://ajbell.mention-me.com/m/ol/dm2bs-636cf08a6e",
       "accountTypesSupported": ["ISA", "SIPP", "GIA", "JISA"],
       "fees": {
         "platformFeePercent": 0.25,
@@ -258,25 +260,30 @@
         "specialRules": "No platform fee cap. Tiered dealing: Regular investments £1.50, one-off trades £9.95 (shares/ETFs)."
       },
       "effectiveFrom": "2024-01-01",
-      "lastUpdated": "2026-01-06",
-      "version": 5
+      "lastUpdated": "2026-01-11",
+      "version": 6
     },
     {
       "id": "hargreaves-lansdown",
       "name": "Hargreaves Lansdown",
       "websiteUrl": "https://www.hl.co.uk",
-       "affiliateUrl": "https://www.hl.co.uk",
-      "accountTypesSupported": ["ISA", "SIPP", "GIA", "JISA"],
+      "affiliateUrl": "https://www.hl.co.uk",
+      "accountTypesSupported": ["ISA", "SIPP", "GIA", "JISA", "JSIPP"],
       "fees": {
         "platformFeePercent": 0.45,
         "platformFeeLevel": "account_level",
         "fixedPlatformFee": 0,
         "fixedPlatformFeeLevel": "platform_level",
+        "platformFeeOverridesByAccountType": {
+          "JISA": 0,
+          "JSIPP": 0.45
+        },
         "feeCaps": {
           "isa": 200,
           "sipp": 200,
           "gia": 200,
           "jisa": 25,
+          "jsipp": 200,
           "level": "account_level"
         },
         "dealingFees": {
@@ -296,28 +303,30 @@
         },
         "exitFee": 0,
         "transferFee": 0,
-        "specialRules": "Platform fee capped at £200/year per account (£45 min). Free fund dealing. £11.95 for shares/ETFs, £1.50 for regular share/ETF investments."
+        "specialRules": "Platform fee 0.45% on ISA, SIPP, GIA, JSIPP. 0% on JISA. Fee capped at £200/year per ISA/SIPP/GIA/JSIPP account, £25/year per JISA. Free fund dealing. £11.95 for shares/ETFs, £1.50 for regular share/ETF investments."
       },
       "effectiveFrom": "2024-01-01",
-      "lastUpdated": "2026-01-06",
-      "version": 5
+      "lastUpdated": "2026-01-11",
+      "version": 6
     },
     {
       "id": "fidelity",
       "name": "Fidelity Personal Investing",
       "websiteUrl": "https://www.fidelity.co.uk",
-     "affiliateUrl": "https://fidelity.mention-me.com/m/ol/tl0ol-paul-harsley",
-      "accountTypesSupported": ["ISA", "SIPP", "GIA", "JISA"],
+      "affiliateUrl": "https://fidelity.mention-me.com/m/ol/tl0ol-paul-harsley",
+      "accountTypesSupported": ["ISA", "SIPP", "GIA", "JISA", "JSIPP"],
       "fees": {
         "platformFeePercent": 0.35,
         "platformFeeLevel": "platform_level",
         "fixedPlatformFee": 0,
         "fixedPlatformFeeLevel": "platform_level",
+        "platformFeeExemptAccountTypes": ["JSIPP"],
         "feeCaps": {
           "isa": 0,
           "sipp": 0,
           "gia": 0,
           "jisa": 0,
+          "jsipp": 0,
           "level": "platform_level"
         },
         "dealingFees": {
@@ -337,11 +346,11 @@
         },
         "exitFee": 0,
         "transferFee": 0,
-        "specialRules": "No platform fee cap. 0.35% ongoing charge. Free fund dealing, £10 for shares/ETFs (£1.50 for regular investments)."
+        "specialRules": "No platform fee cap. 0.35% ongoing charge on ISA, SIPP, GIA, JISA. JSIPP has 0% platform fee. Free fund dealing, £10 for shares/ETFs (£1.50 for regular investments)."
       },
       "effectiveFrom": "2024-01-01",
-      "lastUpdated": "2026-01-06",
-      "version": 5
+      "lastUpdated": "2026-01-11",
+      "version": 6
     },
     {
       "id": "charles-stanley-direct",
@@ -379,48 +388,53 @@
         "specialRules": "0.35% platform fee (no cap). SIPP annual fee £100. Free fund dealing. £11.50 for shares/ETFs."
       },
       "effectiveFrom": "2024-01-01",
-      "lastUpdated": "2026-01-06",
-      "version": 5
+      "lastUpdated": "2026-01-11",
+      "version": 6
     },
     {
-  "id": "freetrade",
-  "name": "Freetrade",
-  "websiteUrl": "https://www.freetrade.io",
+      "id": "freetrade",
+      "name": "Freetrade",
+      "websiteUrl": "https://www.freetrade.io",
       "affiliateUrl": "https://magic.freetrade.io/join/paul/6f0bbd59",
-  "accountTypesSupported": ["ISA", "GIA", "SIPP"],
-  "fees": {
-    "platformFeePercent": 0,
-    "platformFeeLevel": "account_level",
-    "fixedPlatformFee": 0,
-    "fixedPlatformFeeLevel": "account_level",
-    "feeCaps": {
-      "isa": 59.88,
-      "sipp": 119.88,
-      "gia": 0,
-      "level": "account_level"
-    },
-    "dealingFees": {
-      "funds": 0,
-      "etfs": 0,
-      "shares": 0
-    },
-    "regularInvestmentFees": {
-      "funds": 0,
-      "etfs": 0,
-      "shares": 0
-    },
-    "sippFees": {
-      "drawdownAnnualFee": 0,
-      "crystallisationFee": 0,
-      "annualFee": 0
-    },
-    "exitFee": 0,
-    "transferFee": 0,
-    "specialRules": "ISA £4.99/month (£59.88/year) per ISA. SIPP £9.99/month (£119.88/year) per SIPP. GIA free."
-  },
+      "accountTypesSupported": ["ISA", "GIA", "SIPP"],
+      "fees": {
+        "platformFeePercent": 0,
+        "platformFeeLevel": "account_level",
+        "fixedPlatformFee": 0,
+        "fixedPlatformFeeLevel": "account_level",
+        "fixedFeeOverridesByAccountType": {
+          "ISA": 4.99,
+          "SIPP": 9.99,
+          "GIA": 0
+        },
+        "feeCaps": {
+          "isa": 0,
+          "sipp": 0,
+          "gia": 0,
+          "level": "account_level"
+        },
+        "dealingFees": {
+          "funds": 0,
+          "etfs": 0,
+          "shares": 0
+        },
+        "regularInvestmentFees": {
+          "funds": 0,
+          "etfs": 0,
+          "shares": 0
+        },
+        "sippFees": {
+          "drawdownAnnualFee": 0,
+          "crystallisationFee": 0,
+          "annualFee": 0
+        },
+        "exitFee": 0,
+        "transferFee": 0,
+        "specialRules": "ISA £4.99/month (£59.88/year) per ISA. SIPP £9.99/month (£119.88/year) per SIPP. GIA free. Free commission trading on UK and US stocks and ETFs."
+      },
       "effectiveFrom": "2024-01-01",
-      "lastUpdated": "2026-01-09",
-      "version": 6
+      "lastUpdated": "2026-01-11",
+      "version": 7
     },
     {
       "id": "trading-212",
@@ -458,8 +472,8 @@
         "specialRules": "Completely free platform. Zero commission on UK and US stocks and ETFs. No SIPP available. Limited customer support. Makes money via FX fees and securities lending."
       },
       "effectiveFrom": "2024-01-01",
-      "lastUpdated": "2026-01-011",
-      "version": 6
+      "lastUpdated": "2026-01-11",
+      "version": 7
     },
     {
       "id": "investengine",
@@ -496,8 +510,8 @@
         "specialRules": "Completely free for DIY ETF portfolio. Zero platform fee. Zero commission. Managed portfolio option available at 0.25% fee. ETFs only, no individual stocks."
       },
       "effectiveFrom": "2024-01-01",
-      "lastUpdated": "2026-01-08",
-      "version": 5
+      "lastUpdated": "2026-01-11",
+      "version": 6
     }
   ]
 }
