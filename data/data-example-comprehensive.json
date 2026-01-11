@@ -1,0 +1,286 @@
+{
+  "version": 1,
+  "lastUpdated": "2026-01-11T12:00:00.000Z",
+  "description": "Comprehensive example demonstrating all available fee structure fields and capabilities",
+  "platforms": [
+    {
+      "id": "example-platform-complete",
+      "name": "Example Platform - All Features",
+      "websiteUrl": "https://example.com",
+      "affiliateUrl": "https://example.com/refer/abc123",
+      "accountTypesSupported": ["ISA", "SIPP", "GIA", "JISA", "JSIPP"],
+      "fees": {
+        "platformFeePercent": 0.35,
+        "platformFeeLevel": "account_level",
+        "fixedPlatformFee": 0,
+        "fixedPlatformFeeLevel": "platform_level",
+        "minimumPlatformFee": 5,
+        "minimumPlatformFeeLevel": "account_level",
+        "platformFeeExemptAccountTypes": ["JSIPP"],
+        "minimumFeeExemptAccountTypes": ["JISA"],
+        "platformFeeOverridesByAccountType": {
+          "ISA": 0.30,
+          "SIPP": 0.25,
+          "JISA": 0
+        },
+        "fixedFeeOverridesByAccountType": {
+          "GIA": 2.99
+        },
+        "feeCaps": {
+          "isa": 250,
+          "sipp": 300,
+          "gia": 200,
+          "jisa": 50,
+          "jsipp": 0,
+          "level": "account_level"
+        },
+        "dealingFees": {
+          "funds": 0,
+          "etfs": 9.99,
+          "shares": 9.99
+        },
+        "regularInvestmentFees": {
+          "funds": 0,
+          "etfs": 1.50,
+          "shares": 1.50
+        },
+        "sippFees": {
+          "drawdownAnnualFee": 50,
+          "crystallisationFee": 100,
+          "annualFee": 120
+        },
+        "exitFee": 25,
+        "transferFee": 50,
+        "inactivityFee": 30,
+        "specialRules": "Example platform demonstrating all available fee structure capabilities. ISA: 0.30% (capped £250). SIPP: 0.25% + £120 annual SIPP fee (capped £300). GIA: £2.99/month fixed fee. JISA: 0% platform fee, exempt from minimum, capped £50. JSIPP: 0% platform fee (exempt). Minimum £5/month applies to ISA/SIPP/GIA only (not JISA). Per-adult fee cap aggregation."
+      },
+      "effectiveFrom": "2026-01-01",
+      "lastUpdated": "2026-01-11",
+      "version": 1
+    },
+    {
+      "id": "example-pricing-plans",
+      "name": "Example Platform - Multiple Plans",
+      "websiteUrl": "https://example-plans.com",
+      "accountTypesSupported": ["ISA", "SIPP", "GIA", "JISA"],
+      "pricingPlans": [
+        {
+          "id": "basic",
+          "name": "Basic Plan",
+          "description": "£5.99/month. ISA and GIA only.",
+          "accountTypesSupported": ["ISA", "GIA"],
+          "fees": {
+            "platformFeePercent": 0,
+            "platformFeeLevel": "platform_level",
+            "fixedPlatformFee": 5.99,
+            "fixedPlatformFeeLevel": "platform_level",
+            "feeCaps": {
+              "level": "platform_level"
+            },
+            "dealingFees": {
+              "funds": 0,
+              "etfs": 5.99,
+              "shares": 5.99
+            },
+            "regularInvestmentFees": {
+              "funds": 0,
+              "etfs": 0,
+              "shares": 0
+            },
+            "sippFees": {
+              "drawdownAnnualFee": 0,
+              "crystallisationFee": 0,
+              "annualFee": 0
+            },
+            "exitFee": 0,
+            "transferFee": 0,
+            "specialRules": "Basic plan: £5.99/month flat fee. Free regular investing. £5.99 per trade for shares/ETFs."
+          }
+        },
+        {
+          "id": "premium",
+          "name": "Premium Plan",
+          "description": "£14.99/month. All account types. Lower dealing fees.",
+          "accountTypesSupported": ["ISA", "SIPP", "GIA", "JISA"],
+          "fees": {
+            "platformFeePercent": 0,
+            "platformFeeLevel": "platform_level",
+            "fixedPlatformFee": 14.99,
+            "fixedPlatformFeeLevel": "platform_level",
+            "feeCaps": {
+              "level": "platform_level"
+            },
+            "dealingFees": {
+              "funds": 0,
+              "etfs": 3.99,
+              "shares": 3.99
+            },
+            "regularInvestmentFees": {
+              "funds": 0,
+              "etfs": 0,
+              "shares": 0
+            },
+            "sippFees": {
+              "drawdownAnnualFee": 0,
+              "crystallisationFee": 0,
+              "annualFee": 80
+            },
+            "exitFee": 0,
+            "transferFee": 0,
+            "specialRules": "Premium plan: £14.99/month flat fee. All account types. £3.99 per trade. SIPP additional £80/year."
+          }
+        }
+      ],
+      "effectiveFrom": "2026-01-01",
+      "lastUpdated": "2026-01-11",
+      "version": 1
+    },
+    {
+      "id": "example-free-platform",
+      "name": "Example Free Platform",
+      "websiteUrl": "https://example-free.com",
+      "accountTypesSupported": ["ISA", "GIA"],
+      "fees": {
+        "platformFeePercent": 0,
+        "platformFeeLevel": "platform_level",
+        "fixedPlatformFee": 0,
+        "fixedPlatformFeeLevel": "platform_level",
+        "feeCaps": {
+          "isa": 0,
+          "gia": 0,
+          "level": "platform_level"
+        },
+        "dealingFees": {
+          "funds": 0,
+          "etfs": 0,
+          "shares": 0
+        },
+        "regularInvestmentFees": {
+          "funds": 0,
+          "etfs": 0,
+          "shares": 0
+        },
+        "sippFees": {
+          "drawdownAnnualFee": 0,
+          "crystallisationFee": 0,
+          "annualFee": 0
+        },
+        "exitFee": 0,
+        "transferFee": 0,
+        "specialRules": "Completely free platform. Zero fees on all accounts and transactions. Revenue from FX spreads and securities lending."
+      },
+      "effectiveFrom": "2026-01-01",
+      "lastUpdated": "2026-01-11",
+      "version": 1
+    },
+    {
+      "id": "example-percentage-only",
+      "name": "Example Percentage Fee Platform",
+      "websiteUrl": "https://example-percentage.com",
+      "accountTypesSupported": ["ISA", "SIPP", "GIA", "JISA"],
+      "fees": {
+        "platformFeePercent": 0.45,
+        "platformFeeLevel": "account_level",
+        "fixedPlatformFee": 0,
+        "fixedPlatformFeeLevel": "platform_level",
+        "feeCaps": {
+          "isa": 200,
+          "sipp": 200,
+          "gia": 200,
+          "jisa": 25,
+          "level": "account_level"
+        },
+        "dealingFees": {
+          "funds": 0,
+          "etfs": 11.95,
+          "shares": 11.95
+        },
+        "regularInvestmentFees": {
+          "funds": 0,
+          "etfs": 1.5,
+          "shares": 1.5
+        },
+        "sippFees": {
+          "drawdownAnnualFee": 0,
+          "crystallisationFee": 0,
+          "annualFee": 0
+        },
+        "exitFee": 0,
+        "transferFee": 0,
+        "specialRules": "Pure percentage model: 0.45% platform fee. Capped at £200/year per adult account, £25/year for JISA. Free fund dealing."
+      },
+      "effectiveFrom": "2026-01-01",
+      "lastUpdated": "2026-01-11",
+      "version": 1
+    },
+    {
+      "id": "example-account-specific-fees",
+      "name": "Example Mixed Fee Structure",
+      "websiteUrl": "https://example-mixed.com",
+      "accountTypesSupported": ["ISA", "SIPP", "GIA"],
+      "fees": {
+        "platformFeePercent": 0,
+        "platformFeeLevel": "account_level",
+        "fixedPlatformFee": 0,
+        "fixedPlatformFeeLevel": "account_level",
+        "fixedFeeOverridesByAccountType": {
+          "ISA": 4.99,
+          "SIPP": 9.99,
+          "GIA": 0
+        },
+        "feeCaps": {
+          "level": "account_level"
+        },
+        "dealingFees": {
+          "funds": 0,
+          "etfs": 0,
+          "shares": 0
+        },
+        "regularInvestmentFees": {
+          "funds": 0,
+          "etfs": 0,
+          "shares": 0
+        },
+        "sippFees": {
+          "drawdownAnnualFee": 0,
+          "crystallisationFee": 0,
+          "annualFee": 0
+        },
+        "exitFee": 0,
+        "transferFee": 0,
+        "specialRules": "Account-specific subscription model: ISA £4.99/month, SIPP £9.99/month, GIA free. Zero commission trading."
+      },
+      "effectiveFrom": "2026-01-01",
+      "lastUpdated": "2026-01-11",
+      "version": 1
+    }
+  ],
+  "fieldDescriptions": {
+    "platformFeePercent": "Percentage-based annual platform fee (e.g., 0.35 = 0.35%)",
+    "platformFeeLevel": "Where percentage fee applies: 'platform_level' (entire portfolio) or 'account_level' (per account)",
+    "fixedPlatformFee": "Fixed monthly fee in GBP (annualized by multiplying by 12)",
+    "fixedPlatformFeeLevel": "Where fixed fee applies: 'platform_level' (once per customer) or 'account_level' (per account)",
+    "minimumPlatformFee": "Minimum monthly platform fee in GBP (annualized by multiplying by 12)",
+    "minimumPlatformFeeLevel": "Where minimum applies: 'platform_level' or 'account_level'",
+    "platformFeeExemptAccountTypes": "Array of account types that pay £0 platform fee (e.g., ['JSIPP'] for Fidelity)",
+    "minimumFeeExemptAccountTypes": "Array of account types excluded from minimum fee calculation (e.g., ['JISA'] for Vanguard)",
+    "platformFeeOverridesByAccountType": "Object mapping account types to specific percentage fees (e.g., {'ISA': 0.30, 'SIPP': 0.25})",
+    "fixedFeeOverridesByAccountType": "Object mapping account types to specific fixed monthly fees (e.g., {'ISA': 4.99, 'GIA': 0})",
+    "feeCaps": "Maximum annual platform fee per account type. Set to 0 for no cap.",
+    "feeCaps.level": "'platform_level' (single cap across portfolio) or 'account_level' (cap per adult, children linked)",
+    "dealingFees": "Cost per trade for funds/ETFs/shares",
+    "regularInvestmentFees": "Cost per regular investment transaction",
+    "sippFees": "SIPP-specific annual charges (drawdown, crystallisation, general annual fee)",
+    "exitFee": "One-time fee for closing account",
+    "transferFee": "Fee for transferring assets out",
+    "inactivityFee": "Annual fee if account inactive",
+    "specialRules": "Human-readable summary of fee rules for display"
+  },
+  "calculationNotes": {
+    "adultAggregation": "When feeCaps.level = 'account_level', fees are calculated per adult. Children's accounts are linked to an adult and included in that adult's fee calculation.",
+    "exemptions": "platformFeeExemptAccountTypes bypasses all platform fee logic for specified accounts (always £0).",
+    "overrides": "platformFeeOverridesByAccountType takes precedence over platformFeePercent for specific account types.",
+    "minimumLogic": "Minimum fee is only applied if calculated platform fee is below the minimum threshold. Exempt account types never trigger minimum.",
+    "capLogic": "Fee caps are applied after all other calculations (percentage, fixed, minimum). Account-level caps aggregate adult + linked children before capping."
+  }
+}
