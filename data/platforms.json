@@ -222,55 +222,47 @@
       "lastUpdated": "2026-01-11",
       "version": 9
     },
-    {
-  id: "aj-bell",
-  name: "AJ Bell Youinvest",
-  websiteUrl: "https://www.ajbell.co.uk",
-  affiliateUrl: "https://ajbell.mention-me.com/m/ol/dm2bs-636cf08a6e",
-  accountTypesSupported: ["ISA", "LISA", "SIPP", "GIA", "JISA"],
-  fees: {
-    platformFeePercent: 0.25,
-    platformFeeLevel: "account_level",
-
-    fixedPlatformFee: 0,
-    fixedPlatformFeeLevel: "platform_level",
-
-    feeCaps: {
-      isa: 42,
-      lisa: 42,
-      sipp: 42,
-      gia: 42,
-      jisa: 42,
-      level: "account_level",
+   {
+  "id": "aj-bell",
+  "name": "AJ Bell",
+  "websiteUrl": "https://www.ajbell.co.uk",
+  "affiliateUrl": "https://ajbell.mention-me.com/m/ol/dm2bs-636cf08a6e",
+  "accountTypesSupported": ["ISA", "LISA", "SIPP", "GIA", "JISA"],
+  "fees": {
+    "platformFeePercent": 0.25,
+    "platformFeeLevel": "account_level",
+    "fixedPlatformFee": 0,
+    "fixedPlatformFeeLevel": "platform_level",
+    "feeCaps": {
+      "isa": 42,
+      "lisa": 42,
+      "sipp": 42,
+      "gia": 42,
+      "jisa": 42,
+      "level": "account_level"
     },
-
-    dealingFees: {
-      funds: 1.5,
-      etfs: 5.0,
-      shares: 5.0,
+    "dealingFees": {
+      "funds": 1.5,
+      "etfs": 5,
+      "shares": 5
     },
-
-    regularInvestmentFees: {
-      funds: 1.5,
-      etfs: 1.5,
-      shares: 1.5,
+    "regularInvestmentFees": {
+      "funds": 1.5,
+      "etfs": 1.5,
+      "shares": 1.5
     },
-
-    sippFees: {
-      drawdownAnnualFee: 0,
-      crystallisationFee: 0,
-      annualFee: 0,
+    "sippFees": {
+      "drawdownAnnualFee": 0,
+      "crystallisationFee": 0,
+      "annualFee": 0
     },
-
-    exitFee: 0,
-    transferFee: 0,
-
-    specialRules:
-      "0.25% custody fee charged per account. Shares, ETFs and investment trusts are capped at £3.50 per month (£42/year) per account. Funds are uncapped. Cash holdings are free. Online dealing: £1.50 for funds, £5.00 for shares/ETFs. Regular investments £1.50.",
+    "exitFee": 0,
+    "transferFee": 0,
+    "specialRules": "0.25% custody fee charged per account. Shares, ETFs and investment trusts are capped at £3.50 per month (£42 per year) per account. Funds are uncapped. Cash holdings are free. Online dealing fees: £1.50 for funds and £5.00 for shares and ETFs. Regular investments cost £1.50."
   },
-  effectiveFrom: "2024-01-01",
-  lastUpdated: "2026-01-14",
-  version: 7,
+  "effectiveFrom": "2024-01-01",
+  "lastUpdated": "2026-01-14",
+  "version": 7
 },
     {
     id: "hargreaves-lansdown",
