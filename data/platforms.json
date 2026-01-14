@@ -1,6 +1,6 @@
 {
-  "version": 13,
-  "lastUpdated": "2026-01-14T14:00:00.000Z",
+  "version": 12,
+  "lastUpdated": "2026-01-11T14:00:00.000Z",
   "platforms": [
     {
       "id": "interactive-investor",
@@ -222,94 +222,93 @@
       "lastUpdated": "2026-01-11",
       "version": 9
     },
-   {
-  "id": "aj-bell",
-  "name": "AJ Bell",
-  "websiteUrl": "https://www.ajbell.co.uk",
-  "affiliateUrl": "https://ajbell.mention-me.com/m/ol/dm2bs-636cf08a6e",
-  "accountTypesSupported": ["ISA", "LISA", "SIPP", "GIA", "JISA"],
-  "fees": {
-    "platformFeePercent": 0.25,
-    "platformFeeLevel": "account_level",
-    "fixedPlatformFee": 0,
-    "fixedPlatformFeeLevel": "platform_level",
-    "feeCaps": {
-      "isa": 42,
-      "lisa": 42,
-      "sipp": 42,
-      "gia": 42,
-      "jisa": 42,
-      "level": "account_level"
-    },
-    "dealingFees": {
-      "funds": 1.5,
-      "etfs": 5,
-      "shares": 5
-    },
-    "regularInvestmentFees": {
-      "funds": 1.5,
-      "etfs": 1.5,
-      "shares": 1.5
-    },
-    "sippFees": {
-      "drawdownAnnualFee": 0,
-      "crystallisationFee": 0,
-      "annualFee": 0
-    },
-    "exitFee": 0,
-    "transferFee": 0,
-    "specialRules": "0.25% custody fee charged per account. Shares, ETFs and investment trusts are capped at £3.50 per month (£42 per year) per account. Funds are uncapped. Cash holdings are free. Online dealing fees: £1.50 for funds and £5.00 for shares and ETFs. Regular investments cost £1.50."
-  },
-  "effectiveFrom": "2024-01-01",
-  "lastUpdated": "2026-01-14",
-  "version": 7
-},
     {
-  "id": "hargreaves-lansdown",
-  "name": "Hargreaves Lansdown",
-  "websiteUrl": "https://www.hl.co.uk",
-  "affiliateUrl": "https://www.hl.co.uk",
-  "accountTypesSupported": ["ISA", "LISA", "SIPP", "GIA", "JISA", "JSIPP"],
-  "fees": {
-    "platformFeePercent": 0.45,
-    "platformFeeLevel": "account_level",
-    "fixedPlatformFee": 0,
-    "fixedPlatformFeeLevel": "platform_level",
-    "platformFeeOverridesByAccountType": {
-      "JISA": 0
+      "id": "aj-bell",
+      "name": "AJ Bell Youinvest",
+      "websiteUrl": "https://www.ajbell.co.uk",
+      "affiliateUrl": "https://ajbell.mention-me.com/m/ol/dm2bs-636cf08a6e",
+      "accountTypesSupported": ["ISA", "SIPP", "GIA", "JISA"],
+      "fees": {
+        "platformFeePercent": 0.25,
+        "platformFeeLevel": "platform_level",
+        "fixedPlatformFee": 0,
+        "fixedPlatformFeeLevel": "platform_level",
+        "feeCaps": {
+          "isa": 0,
+          "sipp": 0,
+          "gia": 0,
+          "jisa": 0,
+          "level": "platform_level"
+        },
+        "dealingFees": {
+          "funds": 1.5,
+          "etfs": 9.95,
+          "shares": 9.95
+        },
+        "regularInvestmentFees": {
+          "funds": 1.5,
+          "etfs": 1.5,
+          "shares": 1.5
+        },
+        "sippFees": {
+          "drawdownAnnualFee": 0,
+          "crystallisationFee": 0,
+          "annualFee": 0
+        },
+        "exitFee": 0,
+        "transferFee": 0,
+        "specialRules": "No platform fee cap. Tiered dealing: Regular investments £1.50, one-off trades £9.95 (shares/ETFs)."
+      },
+      "effectiveFrom": "2024-01-01",
+      "lastUpdated": "2026-01-11",
+      "version": 6
     },
-    "feeCaps": {
-      "isa": 200,
-      "lisa": 200,
-      "sipp": 200,
-      "gia": 200,
-      "jisa": 25,
-      "jsipp": 200,
-      "level": "account_level"
+    {
+      "id": "hargreaves-lansdown",
+      "name": "Hargreaves Lansdown",
+      "websiteUrl": "https://www.hl.co.uk",
+      "affiliateUrl": "https://www.hl.co.uk",
+      "accountTypesSupported": ["ISA", "SIPP", "GIA", "JISA", "JSIPP"],
+      "fees": {
+        "platformFeePercent": 0.45,
+        "platformFeeLevel": "account_level",
+        "fixedPlatformFee": 0,
+        "fixedPlatformFeeLevel": "platform_level",
+        "platformFeeOverridesByAccountType": {
+          "JISA": 0,
+          "JSIPP": 0.45
+        },
+        "feeCaps": {
+          "isa": 200,
+          "sipp": 200,
+          "gia": 200,
+          "jisa": 25,
+          "jsipp": 200,
+          "level": "account_level"
+        },
+        "dealingFees": {
+          "funds": 0,
+          "etfs": 11.95,
+          "shares": 11.95
+        },
+        "regularInvestmentFees": {
+          "funds": 0,
+          "etfs": 1.5,
+          "shares": 1.5
+        },
+        "sippFees": {
+          "drawdownAnnualFee": 0,
+          "crystallisationFee": 0,
+          "annualFee": 0
+        },
+        "exitFee": 0,
+        "transferFee": 0,
+        "specialRules": "Platform fee 0.45% on ISA, SIPP, GIA, JSIPP. 0% on JISA. Fee capped at £200/year per ISA/SIPP/GIA/JSIPP account, £25/year per JISA. Free fund dealing. £11.95 for shares/ETFs, £1.50 for regular share/ETF investments."
+      },
+      "effectiveFrom": "2024-01-01",
+      "lastUpdated": "2026-01-11",
+      "version": 6
     },
-    "dealingFees": {
-      "funds": 0,
-      "etfs": 11.95,
-      "shares": 11.95
-    },
-    "regularInvestmentFees": {
-      "funds": 0,
-      "etfs": 1.5,
-      "shares": 1.5
-    },
-    "sippFees": {
-      "drawdownAnnualFee": 0,
-      "crystallisationFee": 0,
-      "annualFee": 0
-    },
-    "exitFee": 0,
-    "transferFee": 0,
-    "specialRules": "0.45% platform fee applies to ISA, LISA, SIPP, GIA and JSIPP. JISA has no platform fee. Platform fee is capped at £200 per account per year for ISA, LISA, SIPP, GIA and JSIPP. JISA fee is capped at £25 per year. Funds trade free of charge. Share and ETF trades cost £11.95 per trade or £1.50 via regular investment. Note: in reality, HL only caps charges on shares/ETFs (£45 for ISA/LISA, £200 for SIPP), while fund holdings are uncapped. This model applies a single blended cap for simplicity."
-  },
-  "effectiveFrom": "2024-01-01",
-  "lastUpdated": "2026-01-14",
-  "version": 7
-},
     {
       "id": "fidelity",
       "name": "Fidelity Personal Investing",
@@ -513,49 +512,6 @@
       "effectiveFrom": "2024-01-01",
       "lastUpdated": "2026-01-11",
       "version": 6
-    },
-{
-  "id": "nutmeg",
-  "name": "Nutmeg/J.P. Morgan Personal Investing",
-  "websiteUrl": "https://www.personalinvesting.jpmorgan.com/",
-  "affiliateUrl": "https://www.personalinvesting.jpmorgan.com/",
-  "accountTypesSupported": ["ISA", "LISA", "SIPP", "GIA", "JISA"],
-  "fees": {
-    "platformFeePercent": 0.75,
-    "platformFeeLevel": "account_level",
-    "fixedPlatformFee": 0,
-    "fixedPlatformFeeLevel": "platform_level",
-    "feeCaps": {
-      "isa": 0,
-      "lisa": 0,
-      "sipp": 0,
-      "gia": 0,
-      "jisa": 0,
-      "level": "account_level"
-    },
-    "dealingFees": {
-      "funds": 0,
-      "etfs": 0,
-      "shares": 0
-    },
-    "regularInvestmentFees": {
-      "funds": 0,
-      "etfs": 0,
-      "shares": 0
-    },
-    "sippFees": {
-      "drawdownAnnualFee": 0,
-      "crystallisationFee": 0,
-      "annualFee": 0
-    },
-    "exitFee": 0,
-    "transferFee": 0,
-    "specialRules": "Fully managed portfolios only. Annual management fee is tiered: 0.75% on the first £100,000, 0.45% on the portion between £100,000 and £500,000, and 0.25% above £500,000. No dealing fees. Underlying fund costs (typically around 0.19%) are not included in the platform fee."
-  },
-  "effectiveFrom": "2024-01-01",
-  "lastUpdated": "2026-01-14",
-  "version": 1
-},
-
+    }
   ]
 }
