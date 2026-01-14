@@ -265,53 +265,51 @@
   "version": 7
 },
     {
-    id: "hargreaves-lansdown",
-    name: "Hargreaves Lansdown",
-    websiteUrl: "https://www.hl.co.uk",
-    affiliateUrl: "https://www.hl.co.uk",
-    accountTypesSupported: ["ISA", "LISA", "SIPP", "GIA", "JISA", "JSIPP"],
-    fees: {
-      platformFeePercent: 0.45,
-      platformFeeLevel: "account_level",
-      fixedPlatformFee: 0,
-      fixedPlatformFeeLevel: "platform_level",
-      platformFeeOverridesByAccountType: {
-        JISA: 0,
-        LISA: 0.45,
-        JSIPP: 0.45,
-      },
-      feeCaps: {
-        isa: 200,
-        sipp: 200,
-        gia: 200,
-        jisa: 25,
-        jsipp: 200,
-        level: "account_level",
-      },
-      dealingFees: {
-        funds: 0,
-        etfs: 11.95,
-        shares: 11.95,
-      },
-      regularInvestmentFees: {
-        funds: 0,
-        etfs: 1.5,
-        shares: 1.5,
-      },
-      sippFees: {
-        drawdownAnnualFee: 0,
-        crystallisationFee: 0,
-        annualFee: 0,
-      },
-      exitFee: 0,
-      transferFee: 0,
-      specialRules:
-        "HL charges 0.45% per year on funds in ISA, LISA, SIPP, GIA and JSIPP (no cap). JISA funds are free. Shares/ETFs are charged at 0.45% but capped at £45 for ISA/LISA/GIA, £200 for SIPP/JSIPP, and £0 for JISA. Fund dealing is free. Share/ETF dealing £11.95 (£1.50 regular).",
+  "id": "hargreaves-lansdown",
+  "name": "Hargreaves Lansdown",
+  "websiteUrl": "https://www.hl.co.uk",
+  "affiliateUrl": "https://www.hl.co.uk",
+  "accountTypesSupported": ["ISA", "LISA", "SIPP", "GIA", "JISA", "JSIPP"],
+  "fees": {
+    "platformFeePercent": 0.45,
+    "platformFeeLevel": "account_level",
+    "fixedPlatformFee": 0,
+    "fixedPlatformFeeLevel": "platform_level",
+    "platformFeeOverridesByAccountType": {
+      "JISA": 0
     },
-    effectiveFrom: "2024-01-01",
-    lastUpdated: "2026-01-14",
-    version: 7,
+    "feeCaps": {
+      "isa": 200,
+      "lisa": 200,
+      "sipp": 200,
+      "gia": 200,
+      "jisa": 25,
+      "jsipp": 200,
+      "level": "account_level"
+    },
+    "dealingFees": {
+      "funds": 0,
+      "etfs": 11.95,
+      "shares": 11.95
+    },
+    "regularInvestmentFees": {
+      "funds": 0,
+      "etfs": 1.5,
+      "shares": 1.5
+    },
+    "sippFees": {
+      "drawdownAnnualFee": 0,
+      "crystallisationFee": 0,
+      "annualFee": 0
+    },
+    "exitFee": 0,
+    "transferFee": 0,
+    "specialRules": "0.45% platform fee applies to ISA, LISA, SIPP, GIA and JSIPP. JISA has no platform fee. Platform fee is capped at £200 per account per year for ISA, LISA, SIPP, GIA and JSIPP. JISA fee is capped at £25 per year. Funds trade free of charge. Share and ETF trades cost £11.95 per trade or £1.50 via regular investment. Note: in reality, HL only caps charges on shares/ETFs (£45 for ISA/LISA, £200 for SIPP), while fund holdings are uncapped. This model applies a single blended cap for simplicity."
   },
+  "effectiveFrom": "2024-01-01",
+  "lastUpdated": "2026-01-14",
+  "version": 7
+},
     {
       "id": "fidelity",
       "name": "Fidelity Personal Investing",
