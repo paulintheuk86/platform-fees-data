@@ -523,57 +523,49 @@
       "effectiveFrom": "2024-01-01",
       "lastUpdated": "2026-01-11",
       "version": 6
-    }
-    {
-  id: "nutmeg",
-  name: "Nutmeg",
-  websiteUrl: "https://www.nutmeg.com",
-  affiliateUrl: "https://www.nutmeg.com",
-  accountTypesSupported: ["ISA", "LISA", "SIPP", "GIA", "JISA"],
-  fees: {
-    platformFeePercent: 0.75,
-    platformFeeLevel: "account_level",
-
-    fixedPlatformFee: 0,
-    fixedPlatformFeeLevel: "platform_level",
-
-    feeCaps: {
-      isa: 0,
-      lisa: 0,
-      sipp: 0,
-      gia: 0,
-      jisa: 0,
-      level: "account_level",
     },
-
-    dealingFees: {
-      funds: 0,
-      etfs: 0,
-      shares: 0,
+{
+  "id": "nutmeg",
+  "name": "Nutmeg/J.P. Morgan Personal Investing",
+  "websiteUrl": "https://www.personalinvesting.jpmorgan.com/",
+  "affiliateUrl": "https://www.personalinvesting.jpmorgan.com/",
+  "accountTypesSupported": ["ISA", "LISA", "SIPP", "GIA", "JISA"],
+  "fees": {
+    "platformFeePercent": 0.75,
+    "platformFeeLevel": "account_level",
+    "fixedPlatformFee": 0,
+    "fixedPlatformFeeLevel": "platform_level",
+    "feeCaps": {
+      "isa": 0,
+      "lisa": 0,
+      "sipp": 0,
+      "gia": 0,
+      "jisa": 0,
+      "level": "account_level"
     },
-
-    regularInvestmentFees: {
-      funds: 0,
-      etfs: 0,
-      shares: 0,
+    "dealingFees": {
+      "funds": 0,
+      "etfs": 0,
+      "shares": 0
     },
-
-    sippFees: {
-      drawdownAnnualFee: 0,
-      crystallisationFee: 0,
-      annualFee: 0,
+    "regularInvestmentFees": {
+      "funds": 0,
+      "etfs": 0,
+      "shares": 0
     },
-
-    exitFee: 0,
-    transferFee: 0,
-
-    specialRules:
-      "Nutmeg charges a fully inclusive annual management fee. 0.75% on portfolios up to £100,000, 0.45% on the portion between £100,000–£500,000, and 0.25% above £500,000. No dealing fees. Underlying fund costs (typically ~0.19%) are not included in this platform fee.",
+    "sippFees": {
+      "drawdownAnnualFee": 0,
+      "crystallisationFee": 0,
+      "annualFee": 0
+    },
+    "exitFee": 0,
+    "transferFee": 0,
+    "specialRules": "Fully managed portfolios only. Annual management fee is tiered: 0.75% on the first £100,000, 0.45% on the portion between £100,000 and £500,000, and 0.25% above £500,000. No dealing fees. Underlying fund costs (typically around 0.19%) are not included in the platform fee."
   },
-  effectiveFrom: "2024-01-01",
-  lastUpdated: "2026-01-14",
-  version: 1,
-}
+  "effectiveFrom": "2024-01-01",
+  "lastUpdated": "2026-01-14",
+  "version": 1
+},
 
   ]
 }
