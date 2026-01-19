@@ -1,6 +1,6 @@
 {
-  "version": 13,
-  "lastUpdated": "2026-01-14T14:00:00.000Z",
+  "version": 14,
+  "lastUpdated": "2026-01-19T14:00:00.000Z",
   "platforms": [
     {
       "id": "interactive-investor",
@@ -192,12 +192,16 @@
         "minimumPlatformFee": 4,
         "minimumPlatformFeeLevel": "account_level",
         "minimumFeeExemptAccountTypes": ["JISA"],
+        "minimumFeeAggregatePerAdult": true,
+"minimumFeeAggregateThreshold": 32000,
+
         "feeCaps": {
           "isa": 375,
           "sipp": 375,
           "gia": 375,
           "jisa": 0,
-          "level": "account_level"
+          "level": "account_level",
+          "aggregatePerAdult": true
         },
         "dealingFees": {
           "funds": 0,
@@ -219,8 +223,8 @@
         "specialRules": "0.15% platform fee applied to ISA, SIPP, GIA, JISA. Minimum fee £4/month (£48/year) applies ONLY to ISA, SIPP, GIA when combined balances on these accounts are <£32,000. JISA balances are excluded from the minimum fee rule. Fee capped at £375 per adult on ISA, SIPP, GIA."
       },
       "effectiveFrom": "2024-01-01",
-      "lastUpdated": "2026-01-11",
-      "version": 9
+      "lastUpdated": "2026-01-19",
+      "version": 10
     },
    {
   "id": "aj-bell",
@@ -229,17 +233,23 @@
   "affiliateUrl": "https://ajbell.mention-me.com/m/ol/dm2bs-636cf08a6e",
   "accountTypesSupported": ["ISA", "LISA", "SIPP", "GIA", "JISA"],
   "fees": {
-    "platformFeePercent": 0.25,
+    "platformFeePercent": 0,
     "platformFeeLevel": "account_level",
     "fixedPlatformFee": 0,
     "fixedPlatformFeeLevel": "platform_level",
-    "feeCaps": {
-      "isa": 42,
-      "lisa": 42,
-      "sipp": 42,
-      "gia": 42,
-      "jisa": 42,
-      "level": "account_level"
+    "tieredPlatformFee": {
+  "appliesTo": "funds",
+  "tiers": [{ "ratePercent": 0.25 }]
+},
+"feeCaps": {
+  "isa": 42,
+  "lisa": 42,
+  "sipp": 42,
+  "gia": 42,
+  "jisa": 42,
+  "level": "account_level",
+  "appliesTo": ["shares", "etfs"],
+  "aggregatePerAdult": false
     },
     "dealingFees": {
       "funds": 1.5,
@@ -261,8 +271,8 @@
     "specialRules": "0.25% custody fee charged per account. Shares, ETFs and investment trusts are capped at £3.50 per month (£42 per year) per account. Funds are uncapped. Cash holdings are free. Online dealing fees: £1.50 for funds and £5.00 for shares and ETFs. Regular investments cost £1.50."
   },
   "effectiveFrom": "2024-01-01",
-  "lastUpdated": "2026-01-14",
-  "version": 7
+  "lastUpdated": "2026-01-19",
+  "version": 8
 },
     {
   "id": "hargreaves-lansdown",
@@ -271,22 +281,36 @@
   "affiliateUrl": "https://www.hl.co.uk",
   "accountTypesSupported": ["ISA", "LISA", "SIPP", "GIA", "JISA", "JSIPP"],
   "fees": {
-    "platformFeePercent": 0.45,
+    "platformFeePercent": 0,
     "platformFeeLevel": "account_level",
     "fixedPlatformFee": 0,
     "fixedPlatformFeeLevel": "platform_level",
     "platformFeeOverridesByAccountType": {
       "JISA": 0
     },
-    "feeCaps": {
-      "isa": 200,
-      "lisa": 200,
-      "sipp": 200,
-      "gia": 200,
-      "jisa": 25,
-      "jsipp": 200,
-      "level": "account_level"
-    },
+"tieredPlatformFee": {
+  "appliesTo": "funds",
+  "tiers": [
+    { "upTo": 250000, "ratePercent": 0.45 },
+    { "upTo": 1000000, "ratePercent": 0.25 },
+    { "upTo": 2000000, "ratePercent": 0.1 },
+    { "ratePercent": 0.0 }
+  ]
+},
+"tieredPlatformFeeOverridesByAccountType": {
+  "JISA": { "appliesTo": "funds", "tiers": [{ "ratePercent": 0.0 }] }
+},
+"feeCaps": {
+  "isa": 45,
+  "lisa": 45,
+  "sipp": 200,
+  "gia": 0,
+  "jisa": 0,
+  "jsipp": 200,
+  "level": "account_level",
+  "appliesTo": ["shares", "etfs"],
+  "aggregatePerAdult": false
+},
     "dealingFees": {
       "funds": 0,
       "etfs": 11.95,
@@ -304,11 +328,11 @@
     },
     "exitFee": 0,
     "transferFee": 0,
-    "specialRules": "0.45% platform fee applies to ISA, LISA, SIPP, GIA and JSIPP. JISA has no platform fee. Platform fee is capped at £200 per account per year for ISA, LISA, SIPP, GIA and JSIPP. JISA fee is capped at £25 per year. Funds trade free of charge. Share and ETF trades cost £11.95 per trade or £1.50 via regular investment. Note: in reality, HL only caps charges on shares/ETFs (£45 for ISA/LISA, £200 for SIPP), while fund holdings are uncapped. This model applies a single blended cap for simplicity."
+    "specialRules": "HL tiered platform fee (funds): 0.45% to £250k, 0.25% £250k–£1m, 0.10% £1m–£2m, 0% above £2m. JISA 0% in this model. Dealing: funds free; shares/ETFs £11.95 (£1.50 regular). Caps remain simplified in this model."
   },
   "effectiveFrom": "2024-01-01",
-  "lastUpdated": "2026-01-14",
-  "version": 7
+  "lastUpdated": "2026-01-19",
+  "version": 10
 },
     {
       "id": "fidelity",
@@ -317,18 +341,26 @@
       "affiliateUrl": "https://fidelity.mention-me.com/m/ol/tl0ol-paul-harsley",
       "accountTypesSupported": ["ISA", "SIPP", "GIA", "JISA", "JSIPP"],
       "fees": {
-        "platformFeePercent": 0.35,
-        "platformFeeLevel": "platform_level",
+        "platformFeePercent": 0,
+        "platformFeeLevel": "member_level",
         "fixedPlatformFee": 0,
         "fixedPlatformFeeLevel": "platform_level",
         "platformFeeExemptAccountTypes": ["JSIPP"],
+        "tieredPlatformFee": {
+  "appliesTo": "total",
+  "tiers": [
+    { "upTo": 250000, "ratePercent": 0.35 },
+    { "upTo": 1000000, "ratePercent": 0.2 },
+    { "ratePercent": 0.0 }
+  ]
+},
         "feeCaps": {
           "isa": 0,
           "sipp": 0,
           "gia": 0,
           "jisa": 0,
           "jsipp": 0,
-          "level": "platform_level"
+          "level": "member_level"
         },
         "dealingFees": {
           "funds": 0,
@@ -347,11 +379,11 @@
         },
         "exitFee": 0,
         "transferFee": 0,
-        "specialRules": "No platform fee cap. 0.35% ongoing charge on ISA, SIPP, GIA, JISA. JSIPP has 0% platform fee. Free fund dealing, £10 for shares/ETFs (£1.50 for regular investments)."
+        "specialRules": "Tiered service fee (member-level): 0.35% to £250k, 0.20% £250k to £1m, 0% above £1m. JSIPP exempt."
       },
       "effectiveFrom": "2024-01-01",
-      "lastUpdated": "2026-01-11",
-      "version": 6
+      "lastUpdated": "2026-01-19",
+      "version": 8
     },
     {
       "id": "charles-stanley-direct",
@@ -521,7 +553,16 @@
   "affiliateUrl": "https://www.personalinvesting.jpmorgan.com/",
   "accountTypesSupported": ["ISA", "LISA", "SIPP", "GIA", "JISA"],
   "fees": {
-    "platformFeePercent": 0.75,
+    "platformFeePercent": 0,
+    "tieredPlatformFee": {
+  "appliesTo": "total",
+  "tiers": [
+    { "upTo": 100000, "ratePercent": 0.75 },
+    { "upTo": 500000, "ratePercent": 0.45 },
+    { "ratePercent": 0.25 }
+  ]
+},
+
     "platformFeeLevel": "account_level",
     "fixedPlatformFee": 0,
     "fixedPlatformFeeLevel": "platform_level",
@@ -553,8 +594,8 @@
     "specialRules": "Fully managed portfolios only. Annual management fee is tiered: 0.75% on the first £100,000, 0.45% on the portion between £100,000 and £500,000, and 0.25% above £500,000. No dealing fees. Underlying fund costs (typically around 0.19%) are not included in the platform fee."
   },
   "effectiveFrom": "2024-01-01",
-  "lastUpdated": "2026-01-14",
-  "version": 1
+  "lastUpdated": "2026-01-19",
+  "version": 2
 }
 
   ]
