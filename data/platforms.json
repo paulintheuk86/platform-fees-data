@@ -1,5 +1,5 @@
 {
-  "version": 15,
+  "version": 14,
   "lastUpdated": "2026-01-19T14:00:00.000Z",
   "platforms": [
     {
@@ -424,72 +424,51 @@
       "lastUpdated": "2026-01-11",
       "version": 6
     },
-  {
-  "id": "freetrade",
-  "name": "Freetrade",
-  "websiteUrl": "https://www.freetrade.io",
-  "affiliateUrl": "https://magic.freetrade.io/join/paul/6f0bbd59",
-  "accountTypesSupported": ["ISA", "GIA", "SIPP"],
-  "pricingPlans": [
     {
-      "id": "basic",
-      "name": "Basic",
-      "description": "£0/month. Includes ISA, GIA and SIPP.",
+      "id": "freetrade",
+      "name": "Freetrade",
+      "websiteUrl": "https://www.freetrade.io",
+      "affiliateUrl": "https://magic.freetrade.io/join/paul/6f0bbd59",
       "accountTypesSupported": ["ISA", "GIA", "SIPP"],
       "fees": {
         "platformFeePercent": 0,
-        "platformFeeLevel": "platform_level",
+        "platformFeeLevel": "account_level",
         "fixedPlatformFee": 0,
-        "fixedPlatformFeeLevel": "platform_level",
-        "feeCaps": { "level": "platform_level" },
-        "dealingFees": { "funds": 0, "etfs": 0, "shares": 0 },
-        "regularInvestmentFees": { "funds": 0, "etfs": 0, "shares": 0 },
-        "sippFees": { "drawdownAnnualFee": 0, "crystallisationFee": 0, "annualFee": 0 },
+        "fixedPlatformFeeLevel": "account_level",
+        "fixedFeeOverridesByAccountType": {
+          "ISA": 4.99,
+          "SIPP": 9.99,
+          "GIA": 0
+        },
+        "feeCaps": {
+          "isa": 0,
+          "sipp": 0,
+          "gia": 0,
+          "level": "account_level"
+        },
+        "dealingFees": {
+          "funds": 0,
+          "etfs": 0,
+          "shares": 0
+        },
+        "regularInvestmentFees": {
+          "funds": 0,
+          "etfs": 0,
+          "shares": 0
+        },
+        "sippFees": {
+          "drawdownAnnualFee": 0,
+          "crystallisationFee": 0,
+          "annualFee": 0
+        },
         "exitFee": 0,
-        "transferFee": 0
-      }
+        "transferFee": 0,
+        "specialRules": "ISA £4.99/month (£59.88/year) per ISA. SIPP £9.99/month (£119.88/year) per SIPP. GIA free. Free commission trading on UK and US stocks and ETFs."
+      },
+      "effectiveFrom": "2024-01-01",
+      "lastUpdated": "2026-01-11",
+      "version": 7
     },
-    {
-      "id": "standard",
-      "name": "Standard",
-      "description": "£4.99/month. Includes ISA, GIA and SIPP.",
-      "accountTypesSupported": ["ISA", "GIA", "SIPP"],
-      "fees": {
-        "platformFeePercent": 0,
-        "platformFeeLevel": "platform_level",
-        "fixedPlatformFee": 4.99,
-        "fixedPlatformFeeLevel": "platform_level",
-        "feeCaps": { "level": "platform_level" },
-        "dealingFees": { "funds": 0, "etfs": 0, "shares": 0 },
-        "regularInvestmentFees": { "funds": 0, "etfs": 0, "shares": 0 },
-        "sippFees": { "drawdownAnnualFee": 0, "crystallisationFee": 0, "annualFee": 0 },
-        "exitFee": 0,
-        "transferFee": 0
-      }
-    },
-    {
-      "id": "plus",
-      "name": "Plus",
-      "description": "£9.99/month. Includes ISA, GIA and SIPP.",
-      "accountTypesSupported": ["ISA", "GIA", "SIPP"],
-      "fees": {
-        "platformFeePercent": 0,
-        "platformFeeLevel": "platform_level",
-        "fixedPlatformFee": 9.99,
-        "fixedPlatformFeeLevel": "platform_level",
-        "feeCaps": { "level": "platform_level" },
-        "dealingFees": { "funds": 0, "etfs": 0, "shares": 0 },
-        "regularInvestmentFees": { "funds": 0, "etfs": 0, "shares": 0 },
-        "sippFees": { "drawdownAnnualFee": 0, "crystallisationFee": 0, "annualFee": 0 },
-        "exitFee": 0,
-        "transferFee": 0
-      }
-    }
-  ],
-  "effectiveFrom": "2026-01-01",
-  "lastUpdated": "2026-01-24",
-  "version": 8
-},
     {
       "id": "trading-212",
       "name": "Trading 212",
