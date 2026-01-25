@@ -1,5 +1,5 @@
 {
-  "version": 15,
+  "version": 16,
   "lastUpdated": "2026-01-19T14:00:00.000Z",
   "platforms": [
     {
@@ -427,7 +427,7 @@
   {
   "id": "freetrade",
   "name": "Freetrade",
-  "websiteUrl": "https://www.freetrade.io",
+  "websiteUrl": "https://magic.freetrade.io/join/paul/6f0bbd59",
   "affiliateUrl": "https://magic.freetrade.io/join/paul/6f0bbd59",
   "accountTypesSupported": ["ISA", "GIA", "SIPP"],
   "pricingPlans": [
@@ -493,7 +493,7 @@
     {
       "id": "trading-212",
       "name": "Trading 212",
-      "websiteUrl": "https://www.trading212.com",
+      "websiteUrl": "https://www.trading212.com/invite/1ATBvQPldI",
       "affiliateUrl": "https://www.trading212.com/invite/1ATBvQPldI",
       "accountTypesSupported": ["ISA", "GIA"],
       "fees": {
