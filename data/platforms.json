@@ -1,6 +1,6 @@
 {
-  "version": 16,
-  "lastUpdated": "2026-01-25T14:00:00.000Z",
+  "version": 17,
+  "lastUpdated": "2026-01-26T14:00:00.000Z",
   "platforms": [
     {
       "id": "interactive-investor",
@@ -274,7 +274,7 @@
   "lastUpdated": "2026-01-19",
   "version": 8
 },
-    {
+   {
   "id": "hargreaves-lansdown",
   "name": "Hargreaves Lansdown",
   "websiteUrl": "https://www.hl.co.uk",
@@ -285,54 +285,63 @@
     "platformFeeLevel": "account_level",
     "fixedPlatformFee": 0,
     "fixedPlatformFeeLevel": "platform_level",
+
     "platformFeeOverridesByAccountType": {
       "JISA": 0
     },
-"tieredPlatformFee": {
-  "appliesTo": "funds",
-  "tiers": [
-    { "upTo": 250000, "ratePercent": 0.45 },
-    { "upTo": 1000000, "ratePercent": 0.25 },
-    { "upTo": 2000000, "ratePercent": 0.1 },
-    { "ratePercent": 0.0 }
-  ]
-},
-"tieredPlatformFeeOverridesByAccountType": {
-  "JISA": { "appliesTo": "funds", "tiers": [{ "ratePercent": 0.0 }] }
-},
-"feeCaps": {
-  "isa": 45,
-  "lisa": 45,
-  "sipp": 200,
-  "gia": 0,
-  "jisa": 0,
-  "jsipp": 200,
-  "level": "account_level",
-  "appliesTo": ["shares", "etfs"],
-  "aggregatePerAdult": false
-},
-    "dealingFees": {
-      "funds": 0,
-      "etfs": 11.95,
-      "shares": 11.95
+
+    "tieredPlatformFee": {
+      "appliesTo": "funds",
+      "tiers": [
+        { "upTo": 250000, "ratePercent": 0.35 },
+        { "upTo": 1000000, "ratePercent": 0.25 },
+        { "upTo": 2000000, "ratePercent": 0.1 },
+        { "ratePercent": 0.0 }
+      ]
     },
+
+    "tieredPlatformFeeOverridesByAccountType": {
+      "JISA": { "appliesTo": "funds", "tiers": [{ "ratePercent": 0.0 }] }
+    },
+
+    "feeCaps": {
+      "isa": 150,
+      "lisa": 45,
+      "sipp": 150,
+      "gia": 150,
+      "jisa": 0,
+      "jsipp": 150,
+      "level": "account_level",
+      "appliesTo": ["shares", "etfs"],
+      "aggregatePerAdult": false
+    },
+
+    "dealingFees": {
+      "funds": 1.95,
+      "etfs": 6.95,
+      "shares": 6.95
+    },
+
     "regularInvestmentFees": {
       "funds": 0,
       "etfs": 1.5,
       "shares": 1.5
     },
+
     "sippFees": {
       "drawdownAnnualFee": 0,
       "crystallisationFee": 0,
       "annualFee": 0
     },
+
     "exitFee": 0,
     "transferFee": 0,
-    "specialRules": "HL tiered platform fee (funds): 0.45% to £250k, 0.25% £250k–£1m, 0.10% £1m–£2m, 0% above £2m. JISA 0% in this model. Dealing: funds free; shares/ETFs £11.95 (£1.50 regular). Caps remain simplified in this model."
+
+    "specialRules": "HL fee changes from 1 March 2026: Fund platform fee tiers reduce to 0.35% up to £250k (then 0.25% to £1m, 0.10% to £2m, 0% above). Shares/ETFs custody charges: ISA capped at £150/year (was £45 cap shown on page); SIPP capped at £150/year (was £200); Fund & Share Account introduces 0.35% custody charge for shares capped at £150. Online dealing: funds become £1.95 per trade (regular monthly investing in funds remains free). Online share/ETF dealing becomes tiered by prior month trades: £6.95 (0–19 trades) or £3.95 (20+ trades) — this model uses £6.95 as the default. Foreign exchange (FX) for overseas share dealing changes to: 0.99% up to £10k, 0.50% £10k–£25k, 0.20% over £25k. Junior ISA: account charges and online dealing charges don’t apply, but FX applies for overseas share trading."
   },
-  "effectiveFrom": "2024-01-01",
-  "lastUpdated": "2026-01-19",
-  "version": 10
+  "effectiveFrom": "2026-01-26",
+  "lastUpdated": "2026-01-26",
+  "version": 11
 },
     {
       "id": "fidelity",
