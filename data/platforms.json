@@ -1,6 +1,6 @@
 {
-  "version": 17,
-  "lastUpdated": "2026-01-26T14:00:00.000Z",
+  "version": 18,
+  "lastUpdated": "2026-04-29T14:00:00.000Z",
   "platforms": [
     {
       "id": "interactive-investor",
@@ -433,71 +433,83 @@
       "lastUpdated": "2026-01-11",
       "version": 6
     },
-  {
+ {
   "id": "freetrade",
   "name": "Freetrade",
   "websiteUrl": "https://magic.freetrade.io/join/paul/6f0bbd59",
   "affiliateUrl": "https://magic.freetrade.io/join/paul/6f0bbd59",
-  "accountTypesSupported": ["ISA", "GIA", "SIPP"],
+  "accountTypesSupported": ["ISA", "GIA", "SIPP", "JISA"],
   "pricingPlans": [
     {
       "id": "basic",
       "name": "Basic",
-      "description": "£0/month. Includes ISA, GIA and SIPP.",
-      "accountTypesSupported": ["ISA", "GIA", "SIPP"],
+      "description": "£0/month. Includes ISA, GIA, SIPP and JISA.",
+      "accountTypesSupported": ["ISA", "GIA", "SIPP", "JISA"],
       "fees": {
         "platformFeePercent": 0,
         "platformFeeLevel": "platform_level",
         "fixedPlatformFee": 0,
         "fixedPlatformFeeLevel": "platform_level",
+        "platformFeeOverridesByAccountType": {
+          "JISA": 0
+        },
         "feeCaps": { "level": "platform_level" },
         "dealingFees": { "funds": 0, "etfs": 0, "shares": 0 },
         "regularInvestmentFees": { "funds": 0, "etfs": 0, "shares": 0 },
         "sippFees": { "drawdownAnnualFee": 0, "crystallisationFee": 0, "annualFee": 0 },
         "exitFee": 0,
-        "transferFee": 0
+        "transferFee": 0,
+        "specialRules": "JISA is free with no subscription required. ISA, GIA and SIPP availability depends on the selected Freetrade plan."
       }
     },
     {
       "id": "standard",
       "name": "Standard",
-      "description": "£4.99/month. Includes ISA, GIA and SIPP.",
-      "accountTypesSupported": ["ISA", "GIA", "SIPP"],
+      "description": "£4.99/month. Includes ISA, GIA, SIPP and JISA.",
+      "accountTypesSupported": ["ISA", "GIA", "SIPP", "JISA"],
       "fees": {
         "platformFeePercent": 0,
         "platformFeeLevel": "platform_level",
         "fixedPlatformFee": 4.99,
         "fixedPlatformFeeLevel": "platform_level",
+        "platformFeeOverridesByAccountType": {
+          "JISA": 0
+        },
         "feeCaps": { "level": "platform_level" },
         "dealingFees": { "funds": 0, "etfs": 0, "shares": 0 },
         "regularInvestmentFees": { "funds": 0, "etfs": 0, "shares": 0 },
         "sippFees": { "drawdownAnnualFee": 0, "crystallisationFee": 0, "annualFee": 0 },
         "exitFee": 0,
-        "transferFee": 0
+        "transferFee": 0,
+        "specialRules": "JISA is free with no subscription required. ISA, GIA and SIPP availability depends on the selected Freetrade plan."
       }
     },
     {
       "id": "plus",
       "name": "Plus",
-      "description": "£9.99/month. Includes ISA, GIA and SIPP.",
-      "accountTypesSupported": ["ISA", "GIA", "SIPP"],
+      "description": "£9.99/month. Includes ISA, GIA, SIPP and JISA.",
+      "accountTypesSupported": ["ISA", "GIA", "SIPP", "JISA"],
       "fees": {
         "platformFeePercent": 0,
         "platformFeeLevel": "platform_level",
         "fixedPlatformFee": 9.99,
         "fixedPlatformFeeLevel": "platform_level",
+        "platformFeeOverridesByAccountType": {
+          "JISA": 0
+        },
         "feeCaps": { "level": "platform_level" },
         "dealingFees": { "funds": 0, "etfs": 0, "shares": 0 },
         "regularInvestmentFees": { "funds": 0, "etfs": 0, "shares": 0 },
         "sippFees": { "drawdownAnnualFee": 0, "crystallisationFee": 0, "annualFee": 0 },
         "exitFee": 0,
-        "transferFee": 0
+        "transferFee": 0,
+        "specialRules": "JISA is free with no subscription required. ISA, GIA and SIPP availability depends on the selected Freetrade plan."
       }
     }
   ],
-  "effectiveFrom": "2026-01-01",
-  "lastUpdated": "2026-01-24",
-  "version": 8
+  "effectiveFrom": "2026-04-01",
+  "lastUpdated": "2026-04-29",
+  "version": 9
 },
     {
       "id": "trading-212",
